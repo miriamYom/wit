@@ -1,5 +1,5 @@
 import sys
-import wit_interface
+import wit_interface as WitInterface
 
 if __name__ == "__main__":
     # TODO: handle edge cases
