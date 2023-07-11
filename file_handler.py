@@ -6,7 +6,7 @@ class FileHandler:
     @staticmethod
     def create_dir(path):
         pass
-#bhgvjvvk
+
     @classmethod
     def find_base_path(cls):
         if cls.base_path:
