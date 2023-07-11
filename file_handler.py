@@ -5,8 +5,11 @@ class FileHandler:
 
     @staticmethod
     def create_dir(path):
-        pass
-#bhgvjvvk
+        current_path = os.path.join(os.getcwd(), path)
+        if os.path.exists(current_path):
+            raise Exception("directory is already exist")
+        os.makedirs(path)
+        
     @classmethod
     def find_base_path(cls):
         if cls.base_path:
