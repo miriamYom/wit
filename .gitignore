@@ -2,3 +2,6 @@
 .venv
 .wit
 venv
+Scripts
+Lib
+__pycache__
