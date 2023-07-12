@@ -4,7 +4,9 @@ import wit_interface
 import wit_interface as WitInterface
 
 if __name__ == "__main__":
+    print("bjf")
     # TODO: handle edge cases
-    command = sys.argv[1]
-    args = sys.argv[2:]
-    WitInterface.handle_commands(command, args)
+    # command = sys.argv[1]
+    # args = sys.argv[2:]
+    # wit_interface.handle_commands(command, args)
+#Im changnig

@@ -1,6 +1,7 @@
 import os
 class FileHandler:
-    base_path = None
+
+    base_path = os.getcwd()
     working_directory = None
 
     @staticmethod
