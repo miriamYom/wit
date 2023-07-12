@@ -1,6 +1,8 @@
 import os
 class FileHandler:
 
+    ROOT_PATH = "C:\\"
+
     base_path = None
     working_directory = None
 
@@ -14,12 +16,13 @@ class FileHandler:
     @classmethod
     def find_base_path(cls):
         current_directory = os.getcwd()
-        while current_directory != '/':
+        while current_directory != cls.ROOT_PATH:
             cls.base_path = os.path.join(current_directory, '.wit')
             if os.path.isdir(cls.base_path):
                 return cls.base_path
             current_directory = os.path.dirname(current_directory)
-        raise FileNotFoundError(".wit directory not found.")
+        return ""
+        # raise FileNotFoundError(".wit directory not found.")
 
     # @classmethod
     # def find_base_path(cls):

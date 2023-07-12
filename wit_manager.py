@@ -12,7 +12,7 @@ class Wit:
 
     @staticmethod
     def init():
-        if Wit.validate_is_wit_repo():
+        if Wit.validate_is_wit_repo() != "":
             raise WitException("Project already initialized")
         else:
             FileHandler.create_dir(".wit")
