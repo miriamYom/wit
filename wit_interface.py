@@ -1,5 +1,11 @@
-import wit_manager
+from wit_manager import Wit
+
 class WitInterface:
     @staticmethod
     def handle_commands(command, args):
-        wit_manager.Wit.init()
+        if command == "init":
+            Wit.init()
+
+
+
+

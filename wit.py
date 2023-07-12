@@ -1,7 +1,7 @@
 import sys
 # this message will couse conflicts.... goodluck us!!!
 import wit_interface
-import wit_interface as WitInterface
+from wit_interface import WitInterface
 
 if __name__ == "__main__":
     # TODO: handle edge cases
