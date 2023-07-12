@@ -1,4 +1,5 @@
+import wit_manager
 class WitInterface:
     @staticmethod
     def handle_commands(command, args):
-        pass
+        wit_manager.Wit.init()

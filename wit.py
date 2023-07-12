@@ -1,7 +1,6 @@
 import sys
 # this message will couse conflicts.... goodluck us!!!
 import wit_interface
-
 import wit_interface as WitInterface
 
 if __name__ == "__main__":
